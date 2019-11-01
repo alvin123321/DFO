@@ -1,0 +1,39 @@
+.header {
+  padding: 1rem 0 !important;
+}
+
+.bullets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bullets > p {
+  border-radius: 12px;
+  background: lightgray;
+  padding: 0.8rem;
+  margin-top: 5px !important;
+  margin-right: 5px !important;
+}
+
+.assist_text {
+  font-size: 0.75rem;
+  color: #a2a2a2;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .assist_text {
+    font-size: 1.1em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .info {
+    margin-top: 5%;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style>
+                    .collapsible {
+                      background-color: #777;
+                      color: white;
+                      cursor: pointer;
+                      padding: 18px;
+                      width: 100%;
+                      border: none;
+                      text-align: left;
+                      outline: none;
+                      font-size: 15px;
+                      
+                    }
+
+                    .collapsible:after {
+                        content: '\002B';
+                        color: white;
+                        font-weight: bold;
+                        float: right;
+                        margin-left: 5px;
+}
+
+                    .active:after {
+                      content: "\2212";
+                    }
+                    
+                    .active, .collapsible:hover {
+                      background-color: #555;
+                    }
+                    
+                    .content {
+                        padding: 0 18px;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                        background-color: #f1f1f1;
+                    }
+                    </style>
+    </head>
+<body>
+<button type="button" class="collapsible">How woll Chakra Sole insoles fit in my showes?</button>
+<div class="content">
+  <p>LChakra Sole insoles are meant to fit any shoe. They have a trimmable guideline and are made from material that is easy to cut</p>
+</div>
+<button type="button" class="collapsible">How da i clean my Chakra Sole insoles?</button>
+<div class="content">
+  <p>Come content</p>
+</div>
+<button type="button" class="collapsible">Can i wear them with any shoes?</button>
+<div class="content">
+  <p>Some content</p>
+</div>
+<button type="button" class="collapsible">Can i transfer my Chakra Sole to shoe?</button>
+<div class="content">
+  <p>Some content</p>
+</div>
+<button type="button" class="collapsible">When will i feel the benefits of wearing Chakra Sole massaging insoles?</button>
+<div class="content">
+  <p>Some content</p>
+</div>
+
+<script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;  
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+          });
+        }
+</script>
+
+</body>
+</html>

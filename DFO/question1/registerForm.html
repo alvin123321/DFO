@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="register-form">
+      <div class="container">
+        <h1>DFO Register form</h1>
+        <hr />
+        <label><b>User Name</b></label>
+        <input type="text" id="name" placeholder="Enter User Name" required />
+
+        <label><b>Password</b></label>
+        <input type="password" id="psw" placeholder="Enter Password" required />
+
+        <label><b>Repeat Password</b></label>
+        <input
+          type="password"
+          id="psw-comfirm"
+          placeholder="Repeat Password"
+          required
+        />
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" id="email" placeholder="Enter Email" required />
+
+        <label for="email"><b>Birthdat (Optional)</b></label>
+        <input type="date" />
+        <hr />
+
+        <button type="button" class="registerbtn" onClick="validateForm()">
+          Register
+        </button>
+      </div>
+    </form>
+
+    <script src="registerForm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </body>
+</html>
